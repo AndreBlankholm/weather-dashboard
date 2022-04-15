@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+   
+
+
+
+    <title>Document</title>
+</head>
+<body class="row">
+    <div class="col-12">
+        <header id="weather-header"><h1>Weather Dashdoard</h1></header>
+    </div>
+    
+   
+    <div class="row" style="width: 20%;">
+        <div class="card  city col-4">
+            <h3 class="card-header text-uppercase col-12">Search for a City:</h3>
+            <form id="user-form" class="card-body col-12">
+              <label class="form-label" for="search-for-city"></label>
+              <input name="search-for-city" id="search-for-city" type="text" autofocus="true" class="form-input" />
+              <button type="submit" class="btn">search</button>
+            </form>
+            <div >
+                <div id="repos-container" class="list-group"></div>
+            </div>
+        </div>
+
+
+
+        <div class="main"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
