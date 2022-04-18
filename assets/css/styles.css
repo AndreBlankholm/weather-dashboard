@@ -13,7 +13,7 @@
  }
 
  .card-header{
-  
+  font-size: large;
    font-weight: 800;
   
  }
@@ -38,8 +38,9 @@
 
 
  .current-city-name-date-icon {
+   font-size: 30px;
   font-weight: bold;
-  display: flex;
+ 
   
  }
 
@@ -52,7 +53,7 @@
  }
 
  .card-header{
-  font-size: large;
+  
   background-color: white;
   border-bottom: white;
  }
@@ -118,3 +119,9 @@
     display: inline;
   }
  
+
+
+
+
+
+  
