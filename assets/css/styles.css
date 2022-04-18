@@ -34,19 +34,18 @@
    font-size: 20px;
    border: 2px solid rgb(106, 103, 103);
    margin-top: 15px;
-
  }
 
- .city-name {
+
+ .current-city-name-date-icon {
   font-weight: bold;
   display: flex;
-
   
  }
 
-  #user-forem {
-  margin-top: 0;
-}
+ #repos-container {
+   border-top: 2px solid rgb(113, 108, 108);
+ }
 
  .card {
    font-size: 10px;

@@ -22,8 +22,8 @@
 
     <div class="repos-container">
       <div class="row">
-        <div class=" pick-a-city col-3">
-          <h3 class="card-header col-12">Search for a City:</h3>
+        <div class="pick-a-city col-3">
+          <h3 class="card-header col-lg-12  ">Search for a City:</h3>
           <form id="user-form" class="col-12">
             <label class="form-label" for="search-for-city"></label>
             <input
@@ -37,29 +37,26 @@
             <button type="submit" class="btn">search</button>
           </form>
           <div>
-            <div id="repos-container" class="list-group"></div>
+            <div id="repos-container" class="list-group"></div> <!--added a border top under the search button-->
           </div>
         </div>
 
         <div class="col-8">
           <div class="row current-city">
-              <div>
+              <div class="current-city-name-date-icon">
                 <tr>
-                    <th scope="row"></th>
                     <td>City</td>
                     <td>Date</td>
                     <td>Icon</td>
                   </tr>
               </div>
+                <div class="col">                    
+                    <p>temp</p><span class="temp"></span>                    
+                   <p>wind</p> <span class="wind"></span>                    
+                    <p>humidty</p><span class="humidty"></span>                   
+                   <p>uv-index</p> <span class="uv-index"></span> 
+                </div>
             
-            <p>Temp:</p>
-            <span class="temp"></span>
-            <p>Wind:</p>
-            <span class="wind"></span>
-            <p>Humidity:</p>
-            <span class="humidty"></span>
-            <p>UV Index:</p>
-            <span class="uv-index"></span>
           </div>
 
           <div class="five-day-forecast">
