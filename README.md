@@ -1,6 +1,10 @@
-# weather-dashboard
+# Weather Dashboard
 Week 6. Server-Side API's
-## Acceptance Criteria
+
+## Language used in project to perform tasks: Html, Css, Java Script
+#
+## Acceptance Criteria:
+
 ## GIVEN a weather dashboard with form inputs
 ## -WHEN I search for a city, THEN I am presented with current and future conditions for that city and that city is added to the search history
 #
@@ -16,4 +20,12 @@ Week 6. Server-Side API's
 ## --WHEN I click on a city in the search history
 ## THEN I am again presented with current and future conditions for that city
 #
-https://courses.bootcampspot.com/courses/1207/files/1447429/preview
+
+## Github:https://github.com/AndreBlankholm/weather-dashboard
+
+## Live URL: https://andreblankholm.github.io/weather-dashboard/
+#
+
+<img src="./images/Challenge 6  2022-04-17 234044.png" alt="screenshot of a weather check dashboard for cities">
+
+## License & copyright © Andre Blankholm, U of M Coding Bootcamp
