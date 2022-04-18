@@ -2,18 +2,20 @@
 var userFormEl = document.querySelector("#user-form");
 var nameInputEl = document.querySelector("#search-for-city");
 
+var weatherApiKey = "05de828319fc1cf4cf97ed816ea2b0fc";
+
 var repoContainerEl = document.querySelector("#repos-container");  // <div> element that we'll write all of the repository data to.
 
 
 
 var getUserRepos = function (user) {
     // format the github api url
-    var apiUrl = "https://api.github.com/users/" + user + "/repos";
+    var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=44.9778&lon=93.2650&appid=05de828319fc1cf4cf97ed816ea2b0fc";
   
     // make a request to the url
     fetch(apiUrl).then(function (response) {
       response.json().then(function (data) {
-        displayRepos(data, user);
+        //displayRepos(data, user);
         console.log(data);
       });
     });                                                //-- Now that we've created the function, let's set it up so that when the response data is 
