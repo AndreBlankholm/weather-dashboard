@@ -44,9 +44,9 @@
   
  }
 
- #repos-container {
-   border-top: 2px solid rgb(113, 108, 108);
- }
+ #search-history-container {
+  border-top: solid black;
+}
 
  .card {
    font-size: 10px;
@@ -63,9 +63,6 @@
     flex-wrap: wrap;
   }
   
-
-
-
   body {
     background-color:white;
     margin: 0;
@@ -76,12 +73,7 @@
     font-size: 16px;
   }
 
-  .five-day-forecast  header {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px;
-  }
-
+ 
   
    .btn:hover {
     color:lightblue;
@@ -104,12 +96,11 @@
     background-color: rgb(66, 158, 233);
     box-shadow: 10px 10px var(--dark);
     border-radius: 4px;
-    
-   
+      
   }
-  
-   .btn:hover {
-    color: rgb(205, 205, 14);
+
+  .btn:hover {
+    color: rgb(249, 249, 245);
     background-color:blue;
     transform: translate(0, 0);
     box-shadow: 5px 5px black;
@@ -119,7 +110,51 @@
     display: inline;
   }
  
+  .saved-search {
+    text-decoration:none;    
+    width: 100%;
+    height:2.25rem;
+    font-weight: bold;
+    display: block;
+    margin: 25px 0;
+    border-radius: var(--border-radius);
+    color:rgb(10, 7, 7);
+    border: none;
+    outline: none;
+    background-color: rgb(184, 178, 176);
+    box-shadow: 10px 10px var(--dark);
+    border-radius: 4px;
+  }
 
+  .saved-search:hover {
+    color: rgb(16, 248, 35);
+    background-color:rgb(30, 69, 244);
+    transform: translate(0, 0);
+    box-shadow: 5px 5px black;
+  }
+
+  .five-day-forecast header {
+    font-size: 25px;
+    font-weight: bold;
+    padding:5px;
+  }
+
+
+  .five-day-date {
+    font-size: 1.0rem;
+    font-weight: bold;  
+    margin: 5px;
+    padding: 5px 0 0 0;
+  }
+
+  .five-day-style {
+    margin: 5px;
+    padding:5px;
+  }
+
+  #five-day-humidity{
+   padding-bottom: 20px;
+  }
 
 
 

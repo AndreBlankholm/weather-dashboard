@@ -5,7 +5,7 @@ var rootUrl = "https://api.openweathermap.org";
 var weatherApiKey = "05de828319fc1cf4cf97ed816ea2b0fc";
 var searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
 
-var repoContainerEl = document.querySelector("#repos-container");  // <div> element that we'll write all of the repository data to.
+var repoContainerEl = document.querySelector("#search-history-container");  // <div> element that we'll write all of the repository data to.
 
 var getForecastData = function(lat, lon) {
   var forecastUrl = `${rootUrl}/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${weatherApiKey}`;
@@ -15,28 +15,34 @@ var getForecastData = function(lat, lon) {
       response.json()
       .then(function(data) {
         console.log(data);
+          //build current and five day forecast
+
       });
     });
+
 };
 
 var updateSearchHistory = function(searchData) {  
   var newSearchHistoryItem = {
     city: searchData.name,
     lat: searchData.lat,
-    lon: searchData.lon
+    lon: searchData.lon  // adding more search inputs
+
   };
 
   if(searchHistory === null) {
     searchHistory = [];
   };
 
-  searchHistory.push(newSearchHistoryItem);
+  searchHistory.push(newSearchHistoryItem);   //pushing new city, lat and lon to local storage
   localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+  //build button for search history
+  
 };
 
 var getCoordinatesByCityName = function (cityName) {
     // format the github api url
-    var limit = 5;
+    var limit = 5;                       // setting limits
     var lat = null;
     var lon = null;
     var geoUrl = `${rootUrl}/geo/1.0/direct?q=${cityName}&limit=${limit}&appid=${weatherApiKey}`;
@@ -47,7 +53,7 @@ var getCoordinatesByCityName = function (cityName) {
       response.json()
       .then(function (data) {
         //displayRepos(data, user);
-        console.log(data[0]);
+        console.log(data[0]);  //test it in console.log
         lat = data[0].lat;
         lon = data[0].lon;
         getForecastData(lat, lon);
